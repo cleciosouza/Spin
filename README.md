@@ -1,4 +1,4 @@
-Sistema de programação baseado em script visuais, converte o script visual em uma linguagem qualquer, hoje Spin tem suporte a build para jquery e javascript.
+Sistema de programação baseado em script visuais converte o script visual em uma linguagem qualquer hoje Spin tem suporte a build para jquery e javascript.
 
 Para o gerenciamento estamos utilizando o http://yeoman.io/
 
@@ -7,9 +7,9 @@ http://yeoman.io/codelab.html
 
 Meus Passos:
 
-1 - Instalar : https://nodejs.org/
+1 - Instalar: https://nodejs.org/
 
-2 - Instalar git windows git :http://creativenotice.com/2013/10/user-yeoman-on-windows-7/:
+2 - Instalar git Windows git: http://creativenotice.com/2013/10/user-yeoman-on-windows-7/:
 
 	1. Download Git from http://git-scm.com/downloads
 	2. Run the Git exe and keep the defaults.
@@ -19,7 +19,7 @@ Meus Passos:
 	6. Clicking next will start the install process, just let it run.
 	7. When the installer completes, just click the “Finish” button. 
 
-3 - Apos instalado nodejs e git abra o terminar "cmd" e execute
+3 - Após instalado nodejs e git abra o terminar "cmd" e execute
 	
 	$ node --version && npm --version 
 	$ npm install --global npm@latest
@@ -28,11 +28,33 @@ Meus Passos:
 	$ yo --version && bower --version && grunt --version
 	$ npm install grunt-autoprefixer --save-dev
 	$ npm install -g generator-webapp
+	
+4 - Executando o servidor:
 
-4 - Exemplo de como criei o projeto pelo 'cmd':
+	grunt serve
+
+5 - Executando os testes de unidade:
+
+	$ grunt test
+
+6 - Criando o Build da aplicação:
+
+	$ grunt ou grunt build
+
+7- listas todos os pacotes instalados
+
+	$ bower list
+
+8 - Grava no arquivo bower.js que o pacote foi instalado
+
+	$ bower install respond --save
+
+
+Criando projeto - Exemplo de como criei o projeto pelo 'cmd':
+
 	$ yo
 	escolha a opção 'webapp'
-	escola a opcao Bootstrap
+	escolha a opção Bootstrap
 
 	Search Bower's registry for the plug-in we want.
 	$ bower search jquery-pjax
@@ -43,22 +65,13 @@ Meus Passos:
 	If you're not using RequireJS...
 	Injects your dependencies into your index.html file.
 	$ grunt wiredep
-	
-5 - Executando o servidor
-	grunt serve
 
-6 - Executando os testes de unidade
-	grunt test
+Continuando projeto - Como ajudo a desenvolver ?:
 
-6 - Criando o Build da aplicacao
-	grunt  ou grunt build
-
-7- lista todos os pacotes instalados
-	bower list
-
-8 - Grava no arquivo bower.js que o pacote foi instalado
-	bower install respond --save
-
+	1 - Clone o repositório
+	2 - Entrem na pasta do projeto pelo cmd ou terminal
+	3 - Executem os passos "Criando projeto", mas quando pedir para realizar override nos arquivos de configuração ee os index.html ou test.html negue esta ação.
+	4 - Execute o projeto e veja esta esta funcionando "grunt serve"
 
 Biografia recomendada:
 http://pt.slideshare.net/mateuspadua3/iniciando-com-yeoman-grunt-e-bower?related=1
